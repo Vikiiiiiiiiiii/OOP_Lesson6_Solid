@@ -1,15 +1,17 @@
 package solid.lsp;
 
-public class Order {
+public class Order extends Orderable {
+
     private int price;
     private int qnt;
 
     public Order(int qnt, int price) {
+        super(qnt, price);
         this.price = price;
         this.qnt = qnt;
     }
 
-    public int getAmount() {
+    public int getAmount(){
         return qnt * price;
     }
 
