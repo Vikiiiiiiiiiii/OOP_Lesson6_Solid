@@ -14,4 +14,13 @@ public class ReportItem{
     public float getAmount(){
         return amount;
     }
+
+    @Override
+    public String toString(){
+        return "ReportItem{"+
+                "description='"+ description + "\'" + 
+                " , amount=" + amount +
+                '}';
+
+    }
 }
